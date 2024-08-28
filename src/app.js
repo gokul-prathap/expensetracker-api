@@ -1,15 +1,12 @@
+const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
-const express = require('express');
 const mongoose = require('mongoose');
 
 const expenseRoutes = require('./routes/expenseroutes');
 
 const app = express();
-// app.use(cors());
-app.use(cors({
-  origin: 'https://expensetracker-ui-self.vercel.app',
-}));
+app.use(cors());
 app.use(express.json());
 
 console.log(process.env.MONGO_URI);
