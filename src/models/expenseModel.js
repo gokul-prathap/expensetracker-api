@@ -5,7 +5,8 @@ const expenseSchema = new mongoose.Schema({
     price: String,
     category: String,
     description: String,
-    paymentMethod: String
+    paymentMethod: String,
+    lastModified:String
 });
 
 module.exports = mongoose.model('Expense', expenseSchema);
