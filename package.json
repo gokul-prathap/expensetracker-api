@@ -6,6 +6,7 @@
     "express": "^4.19.2",
     "mongodb": "^6.8.0",
     "mongoose": "^8.5.3",
+    "nodemon": "^3.1.9",
     "react-spinners": "^0.14.1"
   },
   "scripts": {
